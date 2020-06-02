@@ -5,7 +5,7 @@ output busy;
 reg busy;
 reg [15:0] count;
 
-always @(posedge clk or negedge busy_rst)
+always @(posedge clk)
 begin
 	if(!busy_rst)
 	begin
