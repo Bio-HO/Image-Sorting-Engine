@@ -7,7 +7,7 @@ output[14:0] count;
 
 reg[14:0] count;
 
-always@(posedge clk or negedge rst)
+always@(negedge clk or negedge rst)
 begin
   if(!rst)
   begin
