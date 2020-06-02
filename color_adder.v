@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 module color_adder(clk, rst, value_out, pixel_in);
 input clk, rst;
-input [8:0] pixel_in;
+input [7:0] pixel_in;
 output [22:0] value_out;
 reg [22:0] value_out;
 
