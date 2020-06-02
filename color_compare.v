@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module color_compare(pixel_in,R_pixel,G_pixel,B_pixel);
 
 input[23:0] pixel_in;
