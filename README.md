@@ -40,6 +40,6 @@ color_adder:(未驗證)
 
 疑問: 這樣會變成把整張圖片所有像素的個別顏色全部加在一起了，覺得哪裡怪怪的
 
-input [8:0] pixel_in;
+input [7:0] pixel_in;
 
 output [22:0] value_out;
