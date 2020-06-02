@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module count_adder(count,in,rst,clk);
 
 input in,rst,clk;
