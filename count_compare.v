@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module count_compare(color,R_count,G_count,B_count);
 
 input[14:0] R_count,G_count,B_count;
