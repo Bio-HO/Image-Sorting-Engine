@@ -23,3 +23,11 @@ count_adder:(未合成，波型模擬正確)
 input in,rst,clk;
 
 output[14:0] count;
+
+count16384:(未合成，波型模擬正確)
+
+input clk, busy_rst;
+
+output busy;
+
+注:busy_rst由儲存排序器於處理完畢後送出至計數器
