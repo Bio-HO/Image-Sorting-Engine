@@ -5,19 +5,17 @@ input in,rst,clk;
 
 output[14:0] count;
 
-reg[14:0] Q;
+reg[14:0] count;
 
-assign count=Q+in;
-
-always@(posedge clk)
+always@(posedge clk or negedge rst)
 begin
   if(!rst)
   begin
-    Q=1'b0;
+    count=1'b0;
   end
   else
   begin
-    Q=count;
+    count<=count+in;
   end
 end
 
