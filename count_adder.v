@@ -11,7 +11,7 @@ always@(negedge clk or negedge rst)
 begin
   if(!rst)
   begin
-    count=1'b0;
+    count<=1'b0;
   end
   else
   begin
