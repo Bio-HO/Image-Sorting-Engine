@@ -6,7 +6,7 @@ output adder_rst;
 
 reg[14:0] count;
 
-assign adder_rst=(count!=1'b1);
+assign adder_rst=(count!=1'b0);
 
 always@(posedge clk or negedge rst)
 begin
@@ -15,7 +15,7 @@ begin
   else
   begin
     count=count+1'b1;
-	 if(count>=15'd16384)
+	 if(count>=15'd8)
       count=1'b0;
   end
 end
