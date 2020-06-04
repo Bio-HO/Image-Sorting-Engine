@@ -15,7 +15,7 @@ begin
   else
   begin
     count=count+1'b1;
-	 if(count>=15'd8)
+	 if(count>=15'd16384)
       count=1'b0;
   end
 end
