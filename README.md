@@ -43,3 +43,12 @@ color_adder:(未驗證)
 input [7:0] pixel_in;
 
 output [22:0] value_out;
+
+================================================================================
+rst_counter:(未合成，波型模擬正確)
+負責加法器的rst，在每張圖的第一個pixel輸入進來時同時將adder輸出歸零(因此是clk上升觸發)，這樣clk下降緣adder便能正常做累加
+一樣能被本來輸入的rst觸發
+
+input rst,clk;
+
+output adder_rst;
