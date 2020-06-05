@@ -52,3 +52,12 @@ rst_counter:(未合成，波型模擬正確)
 input rst,clk;
 
 output adder_rst;
+
+================================================================================
+color_mux:(未合成，波型模擬正確)
+將顏色強度依照count_compare輸出的顏色代碼輸出對應的顏色強度
+
+input[1:0] color;
+input[22:0] R,G,B;
+
+output[22:0] total;
