@@ -10,15 +10,14 @@ always@(*)
 begin
   case(color)
     2'b00:
-	   total=R;
+	   total<=R;
 	 2'b01:
-	   total=G;
+	   total<=G;
 	 2'b10:
-	   total=B;
+	   total<=B;
 	 default:
-	   total=23'b0;
+	   total<=23'b0;
   endcase
 end
-
 
 endmodule
