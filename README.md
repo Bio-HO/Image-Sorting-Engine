@@ -61,3 +61,12 @@ input[1:0] color;
 input[22:0] R,G,B;
 
 output[22:0] total;
+
+================================================================================
+count_mux:(未合成，波型模擬正確)
+將顏色個數依照count_compare輸出的顏色代碼輸出對應的顏色個數
+
+input[1:0] color;
+input[14:0] R_count,G_count,B_count;
+
+output[14:0] count;
