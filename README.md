@@ -48,6 +48,7 @@ output [22:0] value_out;
 rst_counter:(未合成，波型模擬正確)
 負責顏色個數與強度六個累加器的rst，在每張圖的第一個pixel輸入進來時同時將adder輸出歸零(因此是clk上升觸發)，這樣clk下降緣adder便能正常做累加
 一樣能被本來輸入的rst觸發
+問題:這可能造成adder在clk復原時又觸發一次rst，需要再修
 
 input rst,clk;
 
