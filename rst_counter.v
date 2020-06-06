@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module rst_counter(adder_rst,rst,clk);
 
 input rst,clk;

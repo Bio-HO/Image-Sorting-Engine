@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module color_mux(total,R,G,B,color);
 
 input[1:0] color;

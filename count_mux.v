@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module count_mux(count,R_count,G_count,B_count,color);
 
 input[1:0] color;

@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module divider(AVG,total,count);
 
 input[14:0] count;
