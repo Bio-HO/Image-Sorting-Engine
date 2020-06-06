@@ -82,6 +82,7 @@ divider:(未合成，波型模擬正確)
 quartus顯示的邏輯閘數目非常精彩，需要再思考如何簡化
 
 input[14:0] count;
+
 input[22:0] total;
 
 output[22:0] AVG;
@@ -92,10 +93,15 @@ insert_sort:(未驗證，僅修到quartus compile沒error)
 #問題:尚未驗證，然後project說明的波型圖中busy在輸出時會拉高，16384那個可能要修
 
 input[1:0] color;
+
 input[22:0] total;  //from divider
+
 input[4:0] index;
+
 input in_valid,rst,clk;  //from??
 
 output[1:0] color_index;
+
 output[4:0] image_out_index;
+
 output out_valid,busy_rst;
