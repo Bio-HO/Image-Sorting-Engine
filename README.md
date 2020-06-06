@@ -85,3 +85,17 @@ input[14:0] count;
 input[22:0] total;
 
 output[22:0] AVG;
+
+================================================================================
+insert_sort:(未驗證，僅修到quartus compile沒error)
+大致上參考line的那篇，輸出則參考project說明的波型圖
+#問題:尚未驗證，然後project說明的波型圖中busy在輸出時會拉高，16384那個可能要修
+
+input[1:0] color;
+input[22:0] total;  //from divider
+input[4:0] index;
+input in_valid,rst,clk;  //from??
+
+output[1:0] color_index;
+output[4:0] image_out_index;
+output out_valid,busy_rst;
