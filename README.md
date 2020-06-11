@@ -46,7 +46,7 @@ input [7:0] pixel_in;
 output [22:0] value_out;
 
 ================================================================================
-rst_counter:(未合成，波型模擬正確)
+"已廢棄"rst_counter:(未合成，波型模擬正確)
 負責顏色個數與強度六個累加器的rst，在每張圖的第一個pixel輸入進來時同時將adder輸出歸零(因此是clk上升觸發)並於clk下降緣時拉高回復，這樣clk下降緣adder便能正常做累加
 一樣能被本來輸入的rst觸發
 
@@ -86,9 +86,10 @@ input[22:0] total;
 output[22:0] AVG;
 
 ================================================================================
-insert_sort:(未驗證，僅修到quartus compile沒error)
-大致上參考line的那篇，輸出則參考project說明的波型圖
-#問題:尚未驗證，然後project說明的波型圖中busy在輸出時會拉高，16384那個可能要修
+insert_sort:(波型模擬正確)
+當clk正緣in_valid高時就讀color、total跟index進來排序
+排完一張就busy_rst拉低一clk
+排完32張就輸出並拉高out_valid
 
 input[1:0] color;
 
